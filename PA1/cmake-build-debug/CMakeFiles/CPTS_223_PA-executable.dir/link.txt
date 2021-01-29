@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -g   CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.o CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.o CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.o  -o CPTS_223_PA-executable 
