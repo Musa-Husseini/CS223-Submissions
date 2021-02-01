@@ -1,10 +1,15 @@
 
-#include "header.h"
+#include "linkedList.h"
 
 int main()
 {
-    //fstream infile;
-    //infile.open("LinuxCommandsCheatSheet.csv", ios::in);
+    ifstream infile;
+    infile.open("Linux_Commands_Cheat_Sheet.csv");
+
+    if(!infile)
+        return 0;
+    commandList<string, string> x;
+    //x.add(infile);
 
 
     int userOption = mainMenu();

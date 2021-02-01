@@ -19,5 +19,5 @@ int mainMenu()
 
 void gameRules()
 {
-    
+    cout <<"The objective of the game is to match the correct description to the correct command. If you get it correct you gain a point if you get it wrong you lose a point" << endl;
 }
