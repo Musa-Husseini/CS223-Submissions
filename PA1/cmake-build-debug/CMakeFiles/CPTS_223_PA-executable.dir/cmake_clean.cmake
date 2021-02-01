@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.o"
+  "CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.o"
   "CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.o"
-  "CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.o"
   "CPTS_223_PA-executable"
   "CPTS_223_PA-executable.pdb"
 )

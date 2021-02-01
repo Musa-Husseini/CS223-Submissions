@@ -143,32 +143,32 @@ CPTS_223_PA-executable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/build
 .PHONY : CPTS_223_PA-executable/fast
 
-factorial.o: factorial.cpp.o
+functions.o: functions.cpp.o
 
-.PHONY : factorial.o
+.PHONY : functions.o
 
 # target to build an object file
-factorial.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.o
-.PHONY : factorial.cpp.o
+functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.o
+.PHONY : functions.cpp.o
 
-factorial.i: factorial.cpp.i
+functions.i: functions.cpp.i
 
-.PHONY : factorial.i
+.PHONY : functions.i
 
 # target to preprocess a source file
-factorial.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.i
-.PHONY : factorial.cpp.i
+functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.i
+.PHONY : functions.cpp.i
 
-factorial.s: factorial.cpp.s
+functions.s: functions.cpp.s
 
-.PHONY : factorial.s
+.PHONY : functions.s
 
 # target to generate assembly for a file
-factorial.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.s
-.PHONY : factorial.cpp.s
+functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.s
+.PHONY : functions.cpp.s
 
 main.o: main.cpp.o
 
@@ -197,33 +197,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-message.o: message.cpp.o
-
-.PHONY : message.o
-
-# target to build an object file
-message.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.o
-.PHONY : message.cpp.o
-
-message.i: message.cpp.i
-
-.PHONY : message.i
-
-# target to preprocess a source file
-message.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.i
-.PHONY : message.cpp.i
-
-message.s: message.cpp.s
-
-.PHONY : message.s
-
-# target to generate assembly for a file
-message.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_PA-executable.dir/build.make CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.s
-.PHONY : message.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,15 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CPTS_223_PA-executable"
-	@echo "... factorial.o"
-	@echo "... factorial.i"
-	@echo "... factorial.s"
+	@echo "... functions.o"
+	@echo "... functions.i"
+	@echo "... functions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... message.o"
-	@echo "... message.i"
-	@echo "... message.s"
 .PHONY : help
 
 

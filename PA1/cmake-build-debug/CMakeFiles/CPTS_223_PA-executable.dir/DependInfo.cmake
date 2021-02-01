@@ -4,9 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/musa/Downloads/CS223-Submissions/PA1/factorial.cpp" "/home/musa/Downloads/CS223-Submissions/PA1/cmake-build-debug/CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.o"
+  "/home/musa/Downloads/CS223-Submissions/PA1/functions.cpp" "/home/musa/Downloads/CS223-Submissions/PA1/cmake-build-debug/CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.o"
   "/home/musa/Downloads/CS223-Submissions/PA1/main.cpp" "/home/musa/Downloads/CS223-Submissions/PA1/cmake-build-debug/CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.o"
-  "/home/musa/Downloads/CS223-Submissions/PA1/message.cpp" "/home/musa/Downloads/CS223-Submissions/PA1/cmake-build-debug/CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

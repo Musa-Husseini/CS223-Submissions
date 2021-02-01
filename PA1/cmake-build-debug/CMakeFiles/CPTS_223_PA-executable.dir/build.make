@@ -90,47 +90,32 @@ CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/musa/Downloads/CS223-Submissions/PA1/main.cpp -o CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.s
 
-CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.o: CMakeFiles/CPTS_223_PA-executable.dir/flags.make
-CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.o: ../factorial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/musa/Downloads/CS223-Submissions/PA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.o -c /home/musa/Downloads/CS223-Submissions/PA1/factorial.cpp
+CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.o: CMakeFiles/CPTS_223_PA-executable.dir/flags.make
+CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.o: ../functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/musa/Downloads/CS223-Submissions/PA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.o -c /home/musa/Downloads/CS223-Submissions/PA1/functions.cpp
 
-CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/musa/Downloads/CS223-Submissions/PA1/factorial.cpp > CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.i
+CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/musa/Downloads/CS223-Submissions/PA1/functions.cpp > CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.i
 
-CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/musa/Downloads/CS223-Submissions/PA1/factorial.cpp -o CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.s
-
-CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.o: CMakeFiles/CPTS_223_PA-executable.dir/flags.make
-CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.o: ../message.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/musa/Downloads/CS223-Submissions/PA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.o -c /home/musa/Downloads/CS223-Submissions/PA1/message.cpp
-
-CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/musa/Downloads/CS223-Submissions/PA1/message.cpp > CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.i
-
-CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/musa/Downloads/CS223-Submissions/PA1/message.cpp -o CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.s
+CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/musa/Downloads/CS223-Submissions/PA1/functions.cpp -o CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.s
 
 # Object files for target CPTS_223_PA-executable
 CPTS_223_PA__executable_OBJECTS = \
 "CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.o" \
-"CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.o" \
-"CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.o"
+"CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.o"
 
 # External object files for target CPTS_223_PA-executable
 CPTS_223_PA__executable_EXTERNAL_OBJECTS =
 
 CPTS_223_PA-executable: CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.o
-CPTS_223_PA-executable: CMakeFiles/CPTS_223_PA-executable.dir/factorial.cpp.o
-CPTS_223_PA-executable: CMakeFiles/CPTS_223_PA-executable.dir/message.cpp.o
+CPTS_223_PA-executable: CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.o
 CPTS_223_PA-executable: CMakeFiles/CPTS_223_PA-executable.dir/build.make
 CPTS_223_PA-executable: CMakeFiles/CPTS_223_PA-executable.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/musa/Downloads/CS223-Submissions/PA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable CPTS_223_PA-executable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/musa/Downloads/CS223-Submissions/PA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CPTS_223_PA-executable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CPTS_223_PA-executable.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

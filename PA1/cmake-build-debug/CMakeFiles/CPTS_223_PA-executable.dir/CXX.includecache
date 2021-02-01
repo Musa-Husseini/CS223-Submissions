@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/musa/Downloads/CS223-Submissions/PA1/header.h
+iostream
+-
+string
+-
+fstream
+-
+
+/home/musa/Downloads/CS223-Submissions/PA1/main.cpp
+header.h
+/home/musa/Downloads/CS223-Submissions/PA1/header.h
+
