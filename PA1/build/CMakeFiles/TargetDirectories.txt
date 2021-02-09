@@ -1,3 +1,0 @@
-/home/musa/Downloads/CS223-Submissions/PA1/build/CMakeFiles/rebuild_cache.dir
-/home/musa/Downloads/CS223-Submissions/PA1/build/CMakeFiles/edit_cache.dir
-/home/musa/Downloads/CS223-Submissions/PA1/build/CMakeFiles/CPTS_223_PA-executable.dir
