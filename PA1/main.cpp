@@ -3,17 +3,26 @@
 
 int main()
 {
-    ifstream infile;
-    infile.open("Linux_Commands_Cheat_Sheet.csv");
+    srand(time(NULL));
+    fstream infile;
+    infile.open("Linux_Commands_Cheat_Sheet.csv", ios::in | ios::out);
 
-    if(!infile)
-        return 0;
+
+    fstream outfile;
+    outfile.open("Profiles.csv", ios::in | ios::out);
+
     commandList<string, string> x;
-    //x.add(infile);
+
+
+    x.add(&infile);
+    x.print();
+
 
 
     int userOption = mainMenu();
-    while(userOption != 6)
+
+
+    while(userOption != 7)
     {
         switch(userOption)
         {
@@ -22,22 +31,30 @@ int main()
                 break;
             case 2:
                 //play game
+                x.gamePlay();
+                x.readPlayerData(outfile);
                 break;
             case 3:
                 //load previous game
+                x.loadPlayerData();
                 break;
             case 4:
                 //add command
+                x.addCommand();
                 break;
             case 5:
                 //remove command
+                x.deleteNode();
                 break;
             case 6:
-                //infile.close();
+                x.overWrite();
+                infile.close();
+                outfile.close();
                 return 0;
-
         }
         userOption = mainMenu();
     }
+
+
     return 0;
 }
