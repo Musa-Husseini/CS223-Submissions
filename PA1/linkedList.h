@@ -2,22 +2,28 @@
 #define CPTS_223_PA1_LINKEDLIST_H
 #include "header.h"
 
+/*
+ Creates nodes for the linked list
+ */
 template<class T, class U>
 class Node
 {
 public:
     T command;
     U description;
-    int visitedNode = 0;
+    int visitedNode = 0; //used for making sure the isnt a repeat of same question asked
     Node* next;
 };
 
+/*
+ Class for the game
+ */
 template<class T, class U>
 class commandList
 {
 private:
-    Node<T, U> * head;
-    Node<T, U> * tail;
+    Node<T, U> * head; //head for linked list
+    Node<T, U> * tail; //tail for linked list
 
     string userName;
     int userScore;
@@ -53,29 +59,32 @@ public:
         delete(data);
     }
 
+    /*
+     reads in data from file and calls push function
+     */
     void add(fstream* file)
     {
         string c, d;
+        //c is for command and d is for description and the while loop will read until end of list
         while(getline(*file, c, ','))
         {
 
             getline(*file, d);
-            push(c, d);
+            push(c, d); //calls on push function
         }
-        print();
 
     }
 
     void push(string c, string d)
     {
 
-        Node<T, U>* temp = new Node<T, U>;
+        Node<T, U>* temp = new Node<T, U>; //creates temp node
 
         temp->command = c;
         temp->description = d;
 
 
-        if(head == NULL)
+        if(head == NULL) //if head is empty then head is the first node
         {
             head = temp;
             tail = temp;
@@ -105,6 +114,9 @@ public:
         cout << data->command << " " << data->description << endl;
     }
 
+    /*
+     loads previous player data
+     */
     void loadPlayerData()
     {
         fstream test;
@@ -131,11 +143,17 @@ public:
         test.close();
     }
 
-
+/*
+ prints out the player data
+ */
     void readPlayerData(fstream& outfile)
     {
         outfile << userName << ", " << userScore << endl;
     }
+
+    /*
+     determines the size of the list
+     */
     int listSize()
     {
         int size = 0;
@@ -151,6 +169,10 @@ public:
 
         return size;
     }
+
+    /*
+     it will find the random command and the following description
+     */
     void randomNodeCorrect(string *c, string *d) {
 
         *c = head->command;
@@ -164,7 +186,7 @@ public:
         for (int i = 0; i < size; i++)
         {
 
-            if(current->next == NULL)
+            if(current->next == NULL) //if the list has been run through it goes back to the beginning
             {
                 current = head;
             }
@@ -180,6 +202,10 @@ public:
 
 
     }
+
+    /*
+     finds a random description to use
+     */
     void randomNodeIncorrect(string *d)
     {
         *d = head->description;
@@ -202,6 +228,10 @@ public:
         }
 
     }
+
+    /*
+     gameplay function
+     */
     void gamePlay()
     {
 
@@ -212,7 +242,7 @@ public:
         int questionCount = 0;
         cout << "How many questions would you like there to be asked? (5-30)" << endl;
         cin >> questionCount;
-        while(questionCount > 30 || questionCount < 5)
+        while(questionCount > 30 || questionCount < 5) //error checking
         {
             cout << "Please chose within the range 5-30" << endl;
             cin >> questionCount;
@@ -226,10 +256,10 @@ public:
         int randOrder = 0;
         for(int i = 0; i < questionCount; i++)
         {
-            randomNodeCorrect(&currentCommand, &currentDescription);
-            randomNodeIncorrect(&wrongDes1);
-            randomNodeIncorrect(&wrongDes2);
-            while(currentDescription == wrongDes1 || currentDescription == wrongDes2 || wrongDes1 == wrongDes2)
+            randomNodeCorrect(&currentCommand, &currentDescription); //correct question and description
+            randomNodeIncorrect(&wrongDes1); //incorect descirption
+            randomNodeIncorrect(&wrongDes2); //incorect descirption
+            while(currentDescription == wrongDes1 || currentDescription == wrongDes2 || wrongDes1 == wrongDes2) //checking for duplicates
             {
                 randomNodeIncorrect(&wrongDes1);
                 randomNodeIncorrect(&wrongDes2);
@@ -241,9 +271,9 @@ public:
 
             switch(randOrder)
             {
-                case 1:
+                case 1: //randomizes which answer is right
                     cout << endl << "Question " << i+1 << ": What does " << currentCommand << " do?" << endl;
-                    cout << currentDescription << endl << wrongDes1 << endl << wrongDes2 << endl;
+                    cout << "1." << currentDescription << endl << "2." << wrongDes1 << endl << "3." << wrongDes2 << endl;
                     cin >> userOption;
                     while(userOption > 3 || userOption < 1)
                     {
@@ -266,9 +296,9 @@ public:
 
 
                     break;
-                case 2:
+                case 2: //randomizes which answer is right
                     cout << endl << "Question " << i+1 << ": What does " << currentCommand << " do?" << endl;
-                    cout << wrongDes1 << endl << currentDescription  << endl << wrongDes2 << endl;
+                    cout <<"1." <<  wrongDes1 << endl << "2." << currentDescription  << endl << "3." << wrongDes2 << endl;
 
                     cin >> userOption;
                     while(userOption > 3 || userOption < 1)
@@ -289,9 +319,9 @@ public:
                         userScore--;
                     }
                     break;
-                case 3:
+                case 3:  //randomizes which answer is right
                     cout << endl << "Question " << i+1 << ": What does " << currentCommand << " do?" << endl;
-                    cout << wrongDes1 << endl <<  wrongDes2  << endl << currentDescription<< endl;
+                    cout <<"1." <<  wrongDes1 << endl << "2." <<  wrongDes2  << endl << "3." << currentDescription<< endl;
                     cin >> userOption;
                     while(userOption > 3 || userOption < 1)
                     {
@@ -319,6 +349,9 @@ public:
 
     }
 
+    /*
+     adds a command to the linked list
+     */
     void addCommand()
     {
         string userCommand;
@@ -336,6 +369,9 @@ public:
 
     }
 
+    /*
+     deletes a node from the list
+     */
     void deleteNode()
     {
         string userDelete;
@@ -376,6 +412,10 @@ public:
 
         print();
     }
+
+    /*
+     this will overwrite the csv files with the new information
+     */
     void overWrite()
     {
         fstream overWrite;
