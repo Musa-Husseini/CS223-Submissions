@@ -7,4 +7,5 @@ CMakeFiles/CPTS_223_PA-executable.dir/functions.cpp.o: ../header.h
 CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.o: ../header.h
 CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.o: ../linkedList.h
 CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.o: ../main.cpp
+CMakeFiles/CPTS_223_PA-executable.dir/main.cpp.o: ../profilesArray.h
 

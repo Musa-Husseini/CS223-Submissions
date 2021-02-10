@@ -1,5 +1,6 @@
 #ifndef CPTS_223_PA1_LINKEDLIST_H
 #define CPTS_223_PA1_LINKEDLIST_H
+#include "profilesArray.h"
 #include "header.h"
 
 /*
@@ -24,11 +25,9 @@ class commandList
 private:
     Node<T, U> * head; //head for linked list
     Node<T, U> * tail; //tail for linked list
-
     string userName;
     int userScore;
 
-    //string *loadPlayerNames;
 
 
 public:
@@ -37,7 +36,6 @@ public:
         head = NULL;
         tail = NULL;
         userScore = 0;
-        //loadPlayerNames = new string [5];
         userName = "";
 
 
@@ -114,33 +112,65 @@ public:
         cout << data->command << " " << data->description << endl;
     }
 
+
+    int profilesSize(fstream& file)
+    {
+        int counter = 0;
+        string temp;
+        while(getline(file, temp))
+        {
+            counter++;
+        }
+
+        return counter;
+    }
     /*
      loads previous player data
      */
     void loadPlayerData()
     {
-        fstream test;
-        test.open("Profiles.csv", ios::in);
+        fstream file;
+        file.open("Profiles.csv", ios::in);
+
         string playerName;
         cout << "Please enter you name: " << endl;
         cin >> playerName;
-        string currentFileName;
-        string currentFileScore;
+
+        string currentName;
+        int size = profilesSize(file);
+        file.close();
+        file.open("Profiles.csv", ios::in);
+
+        string currentPoints;
+
+        profilesArray pArray[size];
 
 
-        while(!test.eof())
+
+        int counter = 0;
+        while(counter != size)
         {
-            getline(test, currentFileName, ',');
-            getline(test, currentFileScore);
 
-            if(playerName == currentFileName)
+            getline(file, currentName, ',');
+            getline(file, currentPoints, '\n');
+
+
+            pArray[counter].setPoints(currentPoints);
+            pArray[counter].setName(currentName);
+            counter++;
+        }
+
+        for(int i = 0; i < size; i++)
+        {
+            if(playerName == pArray[i].getName())
             {
-                cout << playerName << ": " << currentFileScore << endl;
+                cout << pArray[i].getName() << ": " << pArray[i].getPoints()<< endl;
             }
 
         }
 
-        test.close();
+
+        file.close();
     }
 
 /*

@@ -8,7 +8,7 @@
  ADVANTAGES/DISADVANTAGES ARRAY
  One advantage of storing the profiles in an array is it is easy to use a loop and traverse the array until you find the profile you want. A disadvantage is finding the right amount
  of indexes to put in the array. Since there can be infinetly many profiles there can be a lot of space being allocated just for the single array. Also like the linked list traversing
- the array can be ineffcient also.
+ the array can be inefficient also.
  */
 int main()
 {
