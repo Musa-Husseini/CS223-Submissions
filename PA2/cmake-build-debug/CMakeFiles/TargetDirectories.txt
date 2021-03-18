@@ -1,0 +1,3 @@
+/home/musa/Downloads/CS223-Submissions/PA2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/musa/Downloads/CS223-Submissions/PA2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/musa/Downloads/CS223-Submissions/PA2/cmake-build-debug/CMakeFiles/CPTS_223_CMake_Example.dir

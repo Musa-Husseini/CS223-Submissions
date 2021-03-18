@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/musa/Downloads/CS223-Submissions/PA2/AVLNode.h
+iostream
+-
+
+/home/musa/Downloads/CS223-Submissions/PA2/AVLTree.h
+iostream
+-
+AVLNode.h
+/home/musa/Downloads/CS223-Submissions/PA2/AVLNode.h
+
+/home/musa/Downloads/CS223-Submissions/PA2/main.cpp
+AVLTree.h
+/home/musa/Downloads/CS223-Submissions/PA2/AVLTree.h
+iostream
+-
+cstdlib
+-
+ctime
+-
+
