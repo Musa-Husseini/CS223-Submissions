@@ -17,17 +17,19 @@ public:
     int height;
 
 
-    /*
-    AVLNode(T& newData, AVLNode<T>* lt, AVLNode<T> rt, int h = 0)
+    AVLNode()
     {
-        data = newData;
-        left = lt;
-        right = rt;
-        height = h;
+        left = nullptr;
+        right = nullptr;
+        height = 0;
     }
+   ~AVLNode()
+   {
+        this->data = 0;
+        this->left = nullptr;
+        this->right = nullptr;
+   }
 
-    ~AVLNode();
-     */
 
 
 };

@@ -118,15 +118,55 @@ private:
     int heightHelper(AVLNode<T>* node)
     {
         if(node == NULL)
+            return -1;
+        int lh = heightHelper(node->left);
+        int rh = heightHelper(node->right);
+
+        if(lh > rh)
+            return lh + 1;
+        else
+            return rh + 1;
+        /*if(node == NULL)
             return 0;
-        return node->height;
+        return node->height;*/
+    }
+
+    bool containsHelper(AVLNode<T>* node, int value)
+    {
+        if(node != NULL)
+        {
+            if(node->data == value)
+                return true;
+            else if(value < node->data)
+                containsHelper(node->left, value);
+            else if(value > node->data)
+                containsHelper(node->right, value);
+            else
+                return false;
+        }
+        else
+            return false;
+    }
+
+
+    void destroyTree(AVLNode<T>* node)
+    {
+        if(node)
+        {
+            destroyTree(node->left);
+            destroyTree(node->right);
+            delete node;
+        }
     }
 public:
     AVLTree()
     {
         root = NULL;
     }
-    ~AVLTree();
+    ~AVLTree()
+    {
+        destroyTree(root);
+    }
 
 
 
@@ -152,6 +192,14 @@ public:
     {
         printPreOrder(root);
         cout << endl;
+    }
+
+
+    void contains(int value)
+    {
+
+        cout << "Contains: " << containsHelper(root, value) << endl;
+
     }
 
 
